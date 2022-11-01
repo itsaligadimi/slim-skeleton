@@ -1,0 +1,17 @@
+{% include('header.twig') %}
+
+{#   Breadcrumb   #}
+{#   /END Breadcrumb   #}
+
+{#   Content   #}
+<div class="container mx-auto flex">
+
+    {% block content %}
+    {% endblock %}
+
+    {{ include('sidebar.twig') }}
+
+</div>
+{#   /END Content   #}
+
+{% include('footer.twig') %}
